@@ -2,7 +2,7 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: Developer
-  namespace: prod # TODO: Re-run this file with other necessary ns
+  namespace: dev # TODO: Re-run this file with other necessary ns
 rules:
 # TODO:
 # target all resources with full access
@@ -28,7 +28,7 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: Developer
-  namespace: dev # TODO: Re-run this file with other necessary ns
+  namespace: prod # TODO: Re-run this file with other necessary ns
 rules:
 # TODO:
 # target all resources with full access
@@ -40,7 +40,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: DeveloperBinding
-  namespace: prod # TODO: Re-run this file with other necessary ns, match with role above
+  namespace: dev # TODO: Re-run this file with other necessary ns, match with role above
 subjects:
 # TODO: add Joey as target user
 # note: this is case sensitive
@@ -76,7 +76,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: DeveloperBinding
-  namespace: dev # TODO: Re-run this file with other necessary ns, match with role above
+  namespace: prod # TODO: Re-run this file with other necessary ns, match with role above
 subjects:
 # TODO: add Joey as target user
 # note: this is case sensitive
