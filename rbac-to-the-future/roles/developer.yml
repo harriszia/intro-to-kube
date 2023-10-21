@@ -45,7 +45,8 @@ subjects:
 # TODO: add Joey as target user
 # note: this is case sensitive
   - kind: User
-    name: Joey 
+    name: Joey
+    apiGroup: rbac.authorization.k8s.io 
 roleRef:
 # TODO: add target role to Developer
   kind: Role
@@ -62,7 +63,8 @@ subjects:
 # TODO: add Joey as target user
 # note: this is case sensitive
   - kind: User
-    name: Joey 
+    name: Joey
+    apiGroup: rbac.authorization.k8s.io 
 roleRef:
 # TODO: add target role to Developer
   kind: Role
@@ -79,7 +81,8 @@ subjects:
 # TODO: add Joey as target user
 # note: this is case sensitive
   - kind: User
-    name: Joey 
+    name: Joey
+    apiGroup: rbac.authorization.k8s.io
 roleRef:
 # TODO: add target role to Developer
   kind: Role
