@@ -51,7 +51,7 @@ spec:
       params:
         - name: NAMESPACE
           value: default
-        - name: IMAGE
+        - name: IMAGE_NAME
           value: nginx:latest
         - name: REPO_URL
           value: https://github.com/abanuelo/intro-to-kube.git
